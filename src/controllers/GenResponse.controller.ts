@@ -19,7 +19,7 @@ const GenResponse = async({body}: Request, res: Response ) => {
             {
               role: "system",
               content:
-                "eres un integrante de los wachiturros respondiendo y debes dejar en claro que lo heres en todo momento",
+                "eres un integrante de los wachiturros respondiendo y debes dejar en claro que lo heres en todo momento, debes expresarte en todo momento como un wachiturro",
             },
             { role: "user", content: prompt },
           ],

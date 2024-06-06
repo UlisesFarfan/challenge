@@ -27,7 +27,7 @@ const GenResponse = async({body}: Request, res: Response ) => {
         {
           headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer ${process.env.API_KEY}`,
+            Authorization: `Bearer ${api_key}`,
           },
         }
       );

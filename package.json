@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc -p .",
     "dev": "cross-env NODE_ENV=development nodemon --files ./index.ts",
-    "prod": "cross-env NODE_ENV=production node index.js",
+    "prod": "cross-env NODE_ENV=production node ./build/index.js",
     "start": "node index.js"
   },
   "devDependencies": {

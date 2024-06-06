@@ -5,10 +5,11 @@
   "author": "UlisesFarfan",
   "license": "MIT",
   "scripts": {
-    "build": "tsc -p .",
-    "dev": "cross-env NODE_ENV=development nodemon --files ./index.ts",
-    "prod": "cross-env NODE_ENV=production node ./build/index.js",
-    "start": "node index.js"
+    "start": "nodemon ./src/index.ts",
+    "build": "rimraf dist && tsc",
+    "ts.check": "tsc --project tsconfig.json",
+    "add-build": "git add dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",

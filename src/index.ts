@@ -12,7 +12,6 @@ const app = express();
 
 const corsOptions = {
   origin: ["*"],
-  credentials: true,
   preflightContinue: false,
 };
 
@@ -25,4 +24,6 @@ app.use(cors(corsOptions));
 // index of my routes
 app.use("/", router);
 
-export default app;
+app.listen(process.env.PORT, () => {
+  console.log(`listening on port ${process.env.PORT}`);
+});
